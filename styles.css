@@ -1,0 +1,130 @@
+:root {
+  font-family: "Hiragino Sans", "Noto Sans JP", system-ui, sans-serif;
+  color-scheme: light;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: #f2f4ff;
+  background: radial-gradient(circle at 15% 0%, #3c2566, #1d1232 45%, #0f0a1d);
+}
+
+.app {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 14px;
+  display: grid;
+  gap: 12px;
+}
+
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 14px;
+  padding: 12px;
+  backdrop-filter: blur(4px);
+}
+
+.hero {
+  border: 2px dashed #ffb84d;
+}
+
+.banner {
+  font-weight: 700;
+  color: #ffd56f;
+  letter-spacing: 0.03em;
+}
+
+h1 {
+  margin: 4px 0 6px;
+  font-size: 1.18rem;
+}
+
+h2 {
+  margin: 0 0 10px;
+  font-size: 1.02rem;
+}
+
+p {
+  margin: 6px 0;
+  line-height: 1.45;
+}
+
+.tiny {
+  opacity: 0.75;
+  font-size: 0.82rem;
+}
+
+.row,
+.buttons {
+  display: grid;
+  gap: 8px;
+}
+
+.buttons.two {
+  grid-template-columns: 1fr 1fr;
+}
+
+.buttons.three {
+  grid-template-columns: 1fr;
+}
+
+input,
+button {
+  font: inherit;
+  border-radius: 10px;
+}
+
+input {
+  border: 1px solid #6f6ca3;
+  background: #121029;
+  color: #fff;
+  padding: 10px;
+}
+
+button {
+  border: 0;
+  color: #fff;
+  padding: 10px 12px;
+  cursor: pointer;
+  background: linear-gradient(130deg, #ff4f6f, #ff9f1c);
+}
+
+button:hover {
+  filter: brightness(1.06);
+}
+
+.log {
+  min-height: 240px;
+  max-height: 360px;
+  overflow: auto;
+  background: rgba(5, 8, 25, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.entry {
+  margin: 0 0 8px;
+  padding: 8px;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.08);
+}
+
+.entry.user {
+  background: rgba(87, 173, 255, 0.24);
+}
+
+.entry.judge {
+  background: rgba(255, 221, 87, 0.2);
+  border: 1px solid rgba(255, 221, 87, 0.5);
+}
+
+.entry strong {
+  display: block;
+  margin-bottom: 3px;
+}

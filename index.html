@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>限界突破ゲームマスター</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="card hero">
+      <p class="banner">🎭 限界突破ゲームマスター・システム起動中</p>
+      <h1>Sparta GM for Haruki & のえちゃん</h1>
+      <p>丁寧にご案内します。…覚悟はいい？今から地獄です。</p>
+      <p class="tiny">Discord風UI / 理不尽ジャッジ対応</p>
+    </header>
+
+    <section class="card">
+      <h2>🕹️ Start Command</h2>
+      <div class="row">
+        <input id="commandInput" value="ゲームスタート" aria-label="start command" />
+        <button id="sendCommandBtn">送信（運命確定）</button>
+      </div>
+      <p class="tiny">「ゲームスタート」で、まず地獄選択（1〜3）を案内します。</p>
+    </section>
+
+    <section class="card">
+      <h2>☠️ どの地獄を味わう？</h2>
+      <div class="buttons three">
+        <button data-mode="1">1. 🤥 虚構解説選手権</button>
+        <button data-mode="2">2. 🙇‍♂️ 緊急謝罪会見</button>
+        <button data-mode="3">3. 💌 限界ラブレター</button>
+      </div>
+      <div class="buttons two">
+        <button id="randomModeBtn">🎲 勝手に地獄を選ぶ</button>
+        <button id="judgeBtn">🏁 独断で勝敗判定</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>💬 Discord風ログ</h2>
+      <article id="logPanel" class="log"></article>
+      <div class="row">
+        <input id="answerInput" placeholder="Haruki / のえちゃん の回答を入力" aria-label="answer" />
+        <button id="postAnswerBtn">回答を投下</button>
+      </div>
+    </section>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
